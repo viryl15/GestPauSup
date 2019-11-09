@@ -1,0 +1,48 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 25 mars 2019, 23:51:03
+    Author     : DYLAN
+*/
+
+.btn{
+    -fx-background-color:  #0090f3;
+    -fx-border-radius: 20px;
+    -fx-font-size: 17px;
+    -fx-font-weight: bold;
+    -fx-alignment:  bottom-center;
+    
+}
+.btn:hover{
+    -fx-background-color:  #0040ff; 
+    /*-fx-rotate: 20;*/
+    -fx-arc-width: 700px;
+    
+}
+.btnManip{
+    -fx-background-radius: 200;
+    -fx-animated: true;
+    
+}
+#btnRetour{
+    -fx-background-color:  #ef4a97; 
+    /*-fx-rotate: 20;*/
+    -fx-arc-width: 700px;
+}
+#btnRetour:hover{
+    -fx-background-color:  #efaa97;
+}
+.lblDeconnexion{
+    -fx-text-fill: blue;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+.lblDeconnexion:hover{
+    -fx-text-fill:navy;
+}
+.lblSimple{
+    -fx-font-size: 20px;
+}

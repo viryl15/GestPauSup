@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="GestPauSup.jnlp">
+  <information>
+    <title>GestPauSup</title>
+    <vendor>DYLAN</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="GestPauSup.jar" size="55242" download="eager" />
+    <jar href="lib\com.mysql.jdbc_5.1.5.jar" size="676712" download="eager" />
+    <jar href="lib\itextpdf-5.4.0.jar" size="1889485" download="eager" />
+    <jar href="lib\jfoenix.jar" size="2211776" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="gestpausup.GestPauSup"  name="GestPauSup" />
+  <update check="always"/>
+</jnlp>

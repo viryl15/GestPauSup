@@ -1,0 +1,1428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPrincipal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="639.0" prefWidth="1024.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.71" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestpausup.FXMLDocumentController">
+   <children>
+      <SplitPane dividerPositions="0.18493150684931506" layoutX="-6.0" prefHeight="551.0" prefWidth="711.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <VBox prefHeight="549.0" prefWidth="207.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label prefHeight="69.0" prefWidth="387.0" />
+                        <Region prefHeight="61.0" prefWidth="186.0" />
+                        <JFXButton id="btnGvh" fx:id="btnGvh" defaultButton="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#btnMenu" prefHeight="65.0" prefWidth="296.0" ripplerFill="BLACK" styleClass="btn" stylesheets="@../css/cssBtn.css" text="Gerer les vehicules" textAlignment="CENTER">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <padding>
+                              <Insets bottom="40.0" />
+                           </padding></JFXButton>
+                        <JFXButton id="btnGch" fx:id="btnGch" defaultButton="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#btnMenu" prefHeight="65.0" prefWidth="316.0" styleClass="btn" stylesheets="@../css/cssBtn.css" text="Gerer les chauffeurs" textAlignment="CENTER">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <padding>
+                              <Insets bottom="40.0" />
+                           </padding></JFXButton>
+                        <JFXButton id="btnGpr" fx:id="btnGpr" defaultButton="true" layoutX="10.0" layoutY="274.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#btnMenu" prefHeight="65.0" prefWidth="316.0" styleClass="btn" stylesheets="@../css/cssBtn.css" text="Gerer le personnel" textAlignment="CENTER">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <padding>
+                              <Insets bottom="40.0" />
+                           </padding></JFXButton>
+                        <JFXButton id="btnGpr" fx:id="btnActivite" defaultButton="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#btnMenu" prefHeight="65.0" prefWidth="186.0" styleClass="btn" stylesheets="@../css/cssBtn.css" text="Activités" textAlignment="CENTER">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <padding>
+                              <Insets bottom="40.0" />
+                           </padding>
+                        </JFXButton>
+                        <JFXButton id="btnGpr" fx:id="btnGur" defaultButton="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#btnMenu" prefHeight="65.0" prefWidth="316.0" styleClass="btn" stylesheets="@../css/cssBtn.css" text="Gerer les utilisateurs" textAlignment="CENTER">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <padding>
+                              <Insets bottom="40.0" />
+                           </padding>
+                        </JFXButton>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="618.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <ScrollPane fitToHeight="true" fitToWidth="true" minHeight="0.0" minViewportHeight="100.0" minViewportWidth="100.0" minWidth="0.0" pickOnBounds="false" prefHeight="160.0" prefViewportHeight="100.0" prefViewportWidth="100.0" prefWidth="618.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <content>
+                      <AnchorPane fx:id="anc2" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="618.0" style="-fx-background-color: #ffffff;">
+                           <children>
+                              <VBox fx:id="gestPersoPanel" layoutY="2.0" prefHeight="700.0" prefWidth="837.0" visible="false" AnchorPane.bottomAnchor="-65.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="2.0">
+                                 <children>
+                                    <GridPane prefHeight="47.0" prefWidth="829.0">
+                                      <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                        <RowConstraints />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                       <children>
+                                          <ImageView fitHeight="87.0" fitWidth="114.0" onMouseClicked="#lblDeconnexion" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="1" GridPane.rowSpan="8">
+                                             <image>
+                                                <Image url="@../images/deconnexion.png" />
+                                             </image>
+                                             <GridPane.margin>
+                                                <Insets left="20.0" />
+                                             </GridPane.margin>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </ImageView>
+                                          <Label alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#lblDeconnexion" prefHeight="24.0" prefWidth="133.0" styleClass="lblDeconnexion" stylesheets="@../css/cssBtn.css" text="Deconnexion" textAlignment="CENTER" underline="true" wrapText="true" GridPane.columnIndex="4" GridPane.rowIndex="10">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Label>
+                                          <Label fx:id="lblEtat3" prefHeight="32.0" prefWidth="490.0" GridPane.columnSpan="4" GridPane.rowIndex="5" GridPane.rowSpan="3" />
+                                       </children>
+                                    </GridPane>
+                                    <Label prefHeight="30.0" prefWidth="178.0" styleClass="lblSimple" stylesheets="@../css/cssBtn.css" text="Liste du personnel" />
+                                    <TableView fx:id="listePersoTv" prefHeight="383.0" prefWidth="840.0" tableMenuButtonVisible="true">
+                                      <columns>
+                                        <TableColumn fx:id="nomPersoCln" prefWidth="75.0" text="Nom" />
+                                        <TableColumn fx:id="prenomPersoCln" prefWidth="75.0" text="Prenom" />
+                                          <TableColumn fx:id="fonctionPersoCln" prefWidth="75.0" text="Fonction" />
+                                          <TableColumn fx:id="adressPersoCln" prefWidth="75.0" text="Adresse" />
+                                          <TableColumn fx:id="telPersoCln" prefWidth="75.0" text="Telephone" />
+                                          <TableColumn fx:id="emailPersoCln" prefWidth="75.0" text="E-mail" />
+                                          <TableColumn fx:id="id_persoCln" prefWidth="75.0" text="id_perso" visible="false" />
+                                      </columns>
+                                       <columnResizePolicy>
+                                          <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                       </columnResizePolicy>
+                                    </TableView>
+                                    <GridPane>
+                                      <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                        <RowConstraints maxHeight="41.0" minHeight="0.0" prefHeight="8.0" vgrow="SOMETIMES" />
+                                        <RowConstraints maxHeight="17.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="24.0" minHeight="0.0" prefHeight="3.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="53.0" minHeight="0.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="53.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                       <children>
+                                          <JFXButton onAction="#ajoutPerso" prefHeight="38.0" prefWidth="140.0" stylesheets="@../css/cssBtn.css" text="Ajouter" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                             <styleClass>
+                                                <String fx:value="btn" />
+                                                <String fx:value="btnManip" />
+                                             </styleClass>
+                                          </JFXButton>
+                                          <JFXButton onAction="#modifPerso" prefHeight="38.0" prefWidth="140.0" stylesheets="@../css/cssBtn.css" text="Modifier" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                             <styleClass>
+                                                <String fx:value="btn" />
+                                                <String fx:value="btnManip" />
+                                             </styleClass>
+                                          </JFXButton>
+                                          <JFXButton fx:id="btnPrintPerso" onAction="#printPersoList" prefHeight="38.0" prefWidth="140.0" stylesheets="@../css/cssBtn.css" text="Imprimer" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                             <styleClass>
+                                                <String fx:value="btn" />
+                                                <String fx:value="btnManip" />
+                                             </styleClass>
+                                          </JFXButton>
+                                          <JFXButton fx:id="btnDeletePerso" onAction="#deletePerso" prefHeight="38.0" prefWidth="140.0" stylesheets="@../css/cssBtn.css" text="Supprimer" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                             <styleClass>
+                                                <String fx:value="btn" />
+                                                <String fx:value="btnManip" />
+                                             </styleClass>
+                                          </JFXButton>
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </VBox>
+                              <GridPane id="connexionPanel1" fx:id="connexionPanel1" hgap="10.0" prefHeight="637.0" prefWidth="713.0" vgap="10.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="100.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                    <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <ImageView fitHeight="181.0" fitWidth="191.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1" GridPane.rowSpan="2">
+                                       <image>
+                                          <Image url="@../images/user.png" />
+                                       </image>
+                                       <GridPane.margin>
+                                          <Insets left="15.0" />
+                                       </GridPane.margin>
+                                    </ImageView>
+                                    <Label prefHeight="32.0" prefWidth="43.0" text="Login" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <Label prefHeight="32.0" prefWidth="117.0" text="Mot de passe" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    <Button id="btnConnexion" fx:id="btnConnexion1" mnemonicParsing="false" onAction="#btnConnexionAction" prefHeight="32.0" prefWidth="107.0" styleClass="btnManip" stylesheets="@../css/cssBtn.css" text="Se Connecter" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="4">
+                                       <GridPane.margin>
+                                          <Insets left="40.0" />
+                                       </GridPane.margin>
+                                    </Button>
+                                    <Label prefHeight="32.0" prefWidth="107.0" text="Type de conte" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                    <ComboBox id="cbtypeCpt" fx:id="cbtypeCpt1" prefWidth="150.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                                    <JFXPasswordField id="tfPassword" maxWidth="158.0" minWidth="158.0" prefHeight="22.0" prefWidth="158.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                    <JFXTextField id="tfLogin" maxWidth="158.0" minWidth="158.0" prefHeight="12.0" prefWidth="158.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </GridPane>
+                              <Pane id="connexionPanel" fx:id="connexionPanel" prefHeight="637.0" prefWidth="713.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/user.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="272.0" layoutY="122.0" prefHeight="32.0" prefWidth="43.0" text="Login" />
+                                    <Label layoutX="272.0" layoutY="229.0" prefHeight="32.0" prefWidth="117.0" text="Mot de passe" />
+                                    <Button id="btnConnexion" fx:id="btnConnexion" layoutX="459.0" layoutY="413.0" mnemonicParsing="false" onAction="#btnConnexionAction" prefHeight="32.0" prefWidth="107.0" text="Se Connecter" />
+                                    <Label layoutX="272.0" layoutY="319.0" prefHeight="32.0" prefWidth="107.0" text="Type de conte" />
+                                    <ComboBox id="cbtypeCpt" fx:id="cbtypeCpt" layoutX="418.0" layoutY="321.0" prefWidth="150.0" />
+                                    <JFXPasswordField id="tfPassword" layoutX="414.0" layoutY="229.0" maxWidth="158.0" minWidth="158.0" prefHeight="22.0" prefWidth="158.0" />
+                                    <JFXTextField id="tfLogin" layoutX="414.0" layoutY="122.0" maxWidth="158.0" minWidth="158.0" prefHeight="12.0" prefWidth="158.0" />
+                                 </children>
+                              </Pane>
+                              <Pane id="welcomePanel" fx:id="welcomePanel" prefHeight="637.0" prefWidth="713.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <Label layoutX="14.0" layoutY="67.0" prefHeight="41.0" prefWidth="411.0" text="Bienvennue M. ....." />
+                                 </children>
+                              </Pane>
+                              <VBox fx:id="gestChPanel" prefHeight="700.0" prefWidth="837.0" visible="false" AnchorPane.bottomAnchor="-65.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="2.0">
+                                 <children>
+                                    <GridPane prefHeight="47.0" prefWidth="829.0">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <ImageView fitHeight="87.0" fitWidth="114.0" onMouseClicked="#lblDeconnexion" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="1" GridPane.rowSpan="8">
+                                             <image>
+                                                <Image url="@../images/deconnexion.png" />
+                                             </image>
+                                             <GridPane.margin>
+                                                <Insets left="20.0" />
+                                             </GridPane.margin>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </ImageView>
+                                          <Label alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#lblDeconnexion" prefHeight="24.0" prefWidth="133.0" styleClass="lblDeconnexion" stylesheets="@../css/cssBtn.css" text="Deconnexion" textAlignment="CENTER" underline="true" wrapText="true" GridPane.columnIndex="4" GridPane.rowIndex="11">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Label>
+                                          <Label fx:id="lblEtat1" prefHeight="32.0" prefWidth="490.0" GridPane.columnSpan="4" GridPane.rowIndex="6" GridPane.rowSpan="3" />
+                                       </children>
+                                    </GridPane>
+                                    <Label prefHeight="30.0" prefWidth="224.0" styleClass="lblSimple" stylesheets="@../css/cssBtn.css" text="Liste des chauffeurs" />
+                                    <TableView fx:id="listeChTv" prefHeight="383.0" prefWidth="840.0" tableMenuButtonVisible="true">
+                                       <columns>
+                                          <TableColumn fx:id="nomChCln" prefWidth="75.0" text="Nom" />
+                                          <TableColumn fx:id="prenomChCln" prefWidth="75.0" text="Prenom" />
+                                          <TableColumn fx:id="typePermisChCln" prefWidth="75.0" text="Type de permis" />
+                                          <TableColumn fx:id="adressChCln" prefWidth="75.0" text="Adresse" />
+                                          <TableColumn fx:id="telChCln" prefWidth="75.0" text="Telephone" />
+                                          <TableColumn fx:id="emailChCln" prefWidth="75.0" text="E-mail" />
+                                          <TableColumn fx:id="id_chCln" prefWidth="75.0" text="id_ch" visible="false" />
+                                       </columns>
+                                       <columnResizePolicy>
+                                          <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                       </columnResizePolicy>
+                                    </TableView>
+                                    <GridPane>
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints maxHeight="41.0" minHeight="0.0" prefHeight="8.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="17.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="24.0" minHeight="0.0" prefHeight="3.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="53.0" minHeight="0.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="53.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <JFXButton onAction="#ajoutCh" prefHeight="38.0" prefWidth="140.0" stylesheets="@../css/cssBtn.css" text="Ajouter" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                             <styleClass>
+                                                <String fx:value="btn" />
+                                                <String fx:value="btnManip" />
+                                             </styleClass>
+                                          </JFXButton>
+                                          <JFXButton onAction="#modifCh" prefHeight="38.0" prefWidth="140.0" stylesheets="@../css/cssBtn.css" text="Modifier" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                             <styleClass>
+                                                <String fx:value="btn" />
+                                                <String fx:value="btnManip" />
+                                             </styleClass>
+                                          </JFXButton>
+                                          <JFXButton onAction="#printChList" prefHeight="38.0" prefWidth="140.0" stylesheets="@../css/cssBtn.css" text="Imprimer" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                             <styleClass>
+                                                <String fx:value="btn" />
+                                                <String fx:value="btnManip" />
+                                             </styleClass>
+                                          </JFXButton>
+                                          <JFXButton fx:id="btnDeleteCh" onAction="#deleteCh" prefHeight="38.0" prefWidth="140.0" stylesheets="@../css/cssBtn.css" text="Supprimer" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                             <styleClass>
+                                                <String fx:value="btn" />
+                                                <String fx:value="btnManip" />
+                                             </styleClass>
+                                          </JFXButton>
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </VBox>
+                              <VBox fx:id="gestVhPanel" layoutY="2.0" prefHeight="700.0" prefWidth="837.0" AnchorPane.bottomAnchor="-65.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="2.0">
+                                 <children>
+                                    <GridPane prefHeight="47.0" prefWidth="829.0">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <ImageView fitHeight="87.0" fitWidth="114.0" onMouseClicked="#lblDeconnexion" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="1" GridPane.rowSpan="8">
+                                             <image>
+                                                <Image url="@../images/deconnexion.png" />
+                                             </image>
+                                             <GridPane.margin>
+                                                <Insets left="20.0" />
+                                             </GridPane.margin>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </ImageView>
+                                          <Label alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#lblDeconnexion" prefHeight="24.0" prefWidth="133.0" styleClass="lblDeconnexion" stylesheets="@../css/cssBtn.css" text="Deconnexion" textAlignment="CENTER" underline="true" wrapText="true" GridPane.columnIndex="4" GridPane.rowIndex="10">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor></Label>
+                                          <Label fx:id="lblEtat2" prefHeight="32.0" prefWidth="490.0" GridPane.columnSpan="4" GridPane.rowIndex="5" GridPane.rowSpan="3" />
+                                       </children>
+                                    </GridPane>
+                                    <Label prefHeight="30.0" prefWidth="227.0" styleClass="lblSimple" stylesheets="@../css/cssBtn.css" text="Liste des vehicules" />
+                                    <TableView fx:id="listeVhTv" onMouseClicked="#clicVhTv" prefHeight="383.0" prefWidth="840.0" tableMenuButtonVisible="true">
+                                       <columns>
+                                          <TableColumn fx:id="immatriculationClumn" prefWidth="75.0" text="Immatriculation" />
+                                          <TableColumn fx:id="modeleColumn" prefWidth="75.0" text="Modele" />
+                                          <TableColumn fx:id="typeVhColumn" prefWidth="75.0" text="Type" />
+                                          <TableColumn fx:id="nbrPlaceColumn" prefWidth="75.0" text="Nombre de place " />
+                                          <TableColumn fx:id="numCartreGriseColumn" prefWidth="75.0" text="Numero de carte grise" />
+                                       </columns>
+                                       <columnResizePolicy>
+                                          <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                       </columnResizePolicy>
+                                    </TableView>
+                                    <GridPane>
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints maxHeight="41.0" minHeight="0.0" prefHeight="8.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="17.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="24.0" minHeight="0.0" prefHeight="3.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="53.0" minHeight="0.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="53.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <JFXButton fx:id="btnAjouter" onAction="#ajoutVh" prefHeight="38.0" prefWidth="140.0" stylesheets="@../css/cssBtn.css" text="Ajouter" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                             <styleClass>
+                                                <String fx:value="btnManip" />
+                                                <String fx:value="btn" />
+                                             </styleClass>
+                                          </JFXButton>
+                                          <JFXButton onAction="#modifVh" prefHeight="38.0" prefWidth="140.0" stylesheets="@../css/cssBtn.css" text="Modifier" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                             <styleClass>
+                                                <String fx:value="btnManip" />
+                                                <String fx:value="btn" />
+                                             </styleClass>
+                                          </JFXButton>
+                                          <JFXButton onAction="#printVhList" prefHeight="38.0" prefWidth="140.0" stylesheets="@../css/cssBtn.css" text="Imprimer" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                             <styleClass>
+                                                <String fx:value="btnManip" />
+                                                <String fx:value="btn" />
+                                             </styleClass>
+                                          </JFXButton>
+                                          <JFXButton fx:id="btnDeleteVh" onAction="#deleteVh" prefHeight="38.0" prefWidth="140.0" stylesheets="@../css/cssBtn.css" text="Supprimer" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                             <styleClass>
+                                                <String fx:value="btnManip" />
+                                                <String fx:value="btn" />
+                                             </styleClass>
+                                          </JFXButton>
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </VBox>
+                              <GridPane fx:id="ajoutVhPanel" prefHeight="637.0" prefWidth="837.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints maxHeight="76.0" minHeight="10.0" prefHeight="76.0" vgrow="SOMETIMES" />
+                                  <RowConstraints maxHeight="75.0" minHeight="0.0" prefHeight="14.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="138.0" minHeight="10.0" prefHeight="70.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="138.0" minHeight="10.0" prefHeight="70.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="220.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="263.0" minHeight="10.0" prefHeight="71.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="227.0" minHeight="10.0" prefHeight="66.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="210.0" minHeight="10.0" prefHeight="72.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="177.0" minHeight="10.0" prefHeight="71.0" vgrow="SOMETIMES" />
+                                  <RowConstraints maxHeight="150.0" minHeight="10.0" prefHeight="126.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <JFXTextField fx:id="immatriculation" cache="true" labelFloat="true" promptText="Immatriculation" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                                       <cursor>
+                                          <Cursor fx:constant="TEXT" />
+                                       </cursor>
+                                    </JFXTextField>
+                                    <Label prefHeight="45.0" prefWidth="277.0" text="Immatriculation" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                    <Label prefHeight="45.0" prefWidth="277.0" text="Modele" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                    <Label prefHeight="45.0" prefWidth="277.0" text="Type" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                    <Label prefHeight="45.0" prefWidth="277.0" text="Nombre de place" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                                    <Label prefHeight="45.0" prefWidth="277.0" text="Numero de carte grise" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                                    <JFXTextField fx:id="numCatreGrise" GridPane.columnIndex="2" GridPane.rowIndex="8">
+                                       <cursor>
+                                          <Cursor fx:constant="TEXT" />
+                                       </cursor>
+                                    </JFXTextField>
+                                    <JFXTextField fx:id="nbrPlace" GridPane.columnIndex="2" GridPane.rowIndex="7">
+                                       <cursor>
+                                          <Cursor fx:constant="TEXT" />
+                                       </cursor>
+                                    </JFXTextField>
+                                    <JFXTextField fx:id="type" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                                       <cursor>
+                                          <Cursor fx:constant="TEXT" />
+                                       </cursor>
+                                    </JFXTextField>
+                                    <JFXTextField fx:id="modele" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                                       <cursor>
+                                          <Cursor fx:constant="TEXT" />
+                                       </cursor>
+                                    </JFXTextField>
+                                    <JFXButton fx:id="btnAjoutVhValidation" onAction="#ajoutVhValidation" prefHeight="32.0" prefWidth="155.0" stylesheets="@../css/cssBtn.css" text="Valider" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="9">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                       <styleClass>
+                                          <String fx:value="btnManip" />
+                                          <String fx:value="btn" />
+                                       </styleClass>
+                                    </JFXButton>
+                                    <JFXButton id="btnRetour" onAction="#retourVh" prefHeight="36.0" prefWidth="156.0" ripplerFill="#ef4a97" stylesheets="@../css/cssBtn.css" text="Retour">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <ImageView fitHeight="87.0" fitWidth="114.0" onMouseClicked="#lblDeconnexion" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="CENTER">
+                                       <image>
+                                          <Image url="@../images/deconnexion.png" />
+                                       </image>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </ImageView>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#lblDeconnexion" prefHeight="24.0" prefWidth="133.0" styleClass="lblDeconnexion" stylesheets="@../css/cssBtn.css" text="Deconnexion" textAlignment="CENTER" underline="true" wrapText="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Label>
+                                    <Label fx:id="lblEtat4" prefHeight="32.0" prefWidth="490.0" GridPane.columnSpan="4" GridPane.rowIndex="2" />
+                                 </children>
+                              </GridPane>
+                              <GridPane fx:id="ajoutChPanel" layoutX="10.0" layoutY="10.0" prefHeight="637.0" prefWidth="837.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints maxHeight="80.0" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="70.0" minHeight="5.0" prefHeight="19.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="123.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="123.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="157.0" minHeight="10.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="179.0" minHeight="10.0" prefHeight="54.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="203.0" minHeight="10.0" prefHeight="56.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="187.0" minHeight="10.0" prefHeight="67.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="181.0" minHeight="10.0" prefHeight="56.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="156.0" minHeight="10.0" prefHeight="70.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="118.0" minHeight="10.0" prefHeight="118.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <JFXTextField fx:id="nomChTf" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                                    <Label prefHeight="45.0" prefWidth="277.0" text="Nom" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                    <Label prefHeight="45.0" prefWidth="277.0" text="Prenom" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                    <Label prefHeight="45.0" prefWidth="277.0" text="Type de permis" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                    <Label prefHeight="45.0" prefWidth="277.0" text="Adresse" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                                    <Label prefHeight="45.0" prefWidth="277.0" text="Numero de telephone" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                                    <JFXTextField fx:id="telChTf" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+                                    <JFXTextField fx:id="adressChTf" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                                    <JFXTextField fx:id="prenomChTf" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                                    <JFXButton onAction="#ajoutChValidation" prefHeight="32.0" prefWidth="155.0" stylesheets="@../css/cssBtn.css" text="Valider" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="10">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                       <styleClass>
+                                          <String fx:value="btnManip" />
+                                          <String fx:value="btn" />
+                                       </styleClass>
+                                    </JFXButton>
+                                    <JFXTextField fx:id="emailChTf" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+                                    <Label prefHeight="45.0" prefWidth="277.0" text="E-mail" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                                    <ComboBox fx:id="typePermisCb" prefHeight="28.0" prefWidth="215.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                                    <JFXButton id="btnRetour" onAction="#retourVh" prefHeight="36.0" prefWidth="156.0" ripplerFill="#ef4a97" stylesheets="@../css/cssBtn.css" text="Retour">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <ImageView fitHeight="87.0" fitWidth="114.0" onMouseClicked="#lblDeconnexion" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="CENTER">
+                                       <image>
+                                          <Image url="@../images/deconnexion.png" />
+                                       </image>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </ImageView>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#lblDeconnexion" prefHeight="24.0" prefWidth="133.0" styleClass="lblDeconnexion" stylesheets="@../css/cssBtn.css" text="Deconnexion" textAlignment="CENTER" underline="true" wrapText="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Label>
+                                    <Label fx:id="lblEtat5" prefHeight="32.0" prefWidth="490.0" GridPane.columnSpan="4" GridPane.rowIndex="2" />
+                                 </children>
+                              </GridPane>
+                              <GridPane fx:id="ajoutPersoPanel" layoutX="20.0" layoutY="20.0" prefHeight="637.0" prefWidth="837.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints maxHeight="138.0" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="140.0" minHeight="5.0" prefHeight="15.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="242.0" minHeight="10.0" prefHeight="68.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="242.0" minHeight="10.0" prefHeight="53.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="232.0" minHeight="10.0" prefHeight="77.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="189.0" minHeight="10.0" prefHeight="67.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="140.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="149.0" minHeight="10.0" prefHeight="52.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="132.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="106.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="90.0" minHeight="10.0" prefHeight="90.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <JFXTextField fx:id="nomPersoTf" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                                    <Label prefHeight="45.0" prefWidth="277.0" text="Nom" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                    <Label prefHeight="45.0" prefWidth="277.0" text="Prenom" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                    <Label prefHeight="45.0" prefWidth="277.0" text="Fonction" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                    <Label prefHeight="45.0" prefWidth="277.0" text="Adresse" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                                    <Label prefHeight="45.0" prefWidth="277.0" text="Numero de telephone" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                                    <JFXTextField fx:id="telPersoTf" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+                                    <JFXTextField fx:id="adressPersoTf" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                                    <JFXTextField fx:id="prenomPersoTf" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                                    <JFXButton onAction="#ajoutPersoValidation" prefHeight="32.0" prefWidth="155.0" stylesheets="@../css/cssBtn.css" text="Valider" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="10">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                       <styleClass>
+                                          <String fx:value="btnManip" />
+                                          <String fx:value="btn" />
+                                       </styleClass>
+                                    </JFXButton>
+                                    <JFXTextField fx:id="emailPersoTf" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+                                    <Label prefHeight="45.0" prefWidth="277.0" text="E-mail" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                                    <JFXTextField fx:id="fonctionPersoTf" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                                    <JFXButton id="btnRetour" onAction="#retourPerso" prefHeight="36.0" prefWidth="156.0" ripplerFill="#ef4a97" stylesheets="@../css/cssBtn.css" text="Retour">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <ImageView fitHeight="87.0" fitWidth="114.0" onMouseClicked="#lblDeconnexion" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="CENTER">
+                                       <image>
+                                          <Image url="@../images/deconnexion.png" />
+                                       </image>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </ImageView>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#lblDeconnexion" prefHeight="24.0" prefWidth="133.0" styleClass="lblDeconnexion" stylesheets="@../css/cssBtn.css" text="Deconnexion" textAlignment="CENTER" underline="true" wrapText="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Label>
+                                    <Label fx:id="lblEtat6" prefHeight="32.0" prefWidth="490.0" GridPane.columnSpan="4" GridPane.rowIndex="2" />
+                                 </children>
+                              </GridPane>
+                              <GridPane fx:id="modifVhPanel" layoutX="10.0" layoutY="10.0" prefHeight="635.0" prefWidth="828.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="259.0" minWidth="10.0" prefWidth="195.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="305.0" minWidth="10.0" prefWidth="253.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="327.0" minWidth="0.0" prefWidth="159.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="418.0" minWidth="10.0" prefWidth="221.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints maxHeight="83.0" minHeight="10.0" prefHeight="83.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="66.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="164.0" minHeight="10.0" prefHeight="43.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="164.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="164.0" minHeight="10.0" prefHeight="14.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="164.0" minHeight="10.0" prefHeight="61.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="168.0" minHeight="10.0" prefHeight="66.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="148.0" minHeight="10.0" prefHeight="66.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="152.0" minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="151.0" minHeight="10.0" prefHeight="75.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="129.0" minHeight="10.0" prefHeight="56.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="114.0" minHeight="10.0" prefHeight="114.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <JFXTextField fx:id="tfmImmatVh" cache="true" labelFloat="true" promptText="Immatriculation" GridPane.columnIndex="3" GridPane.rowIndex="6">
+                                       <cursor>
+                                          <Cursor fx:constant="TEXT" />
+                                       </cursor>
+                                    </JFXTextField>
+                                    <Label prefHeight="45.0" prefWidth="277.0" text="Immatriculation" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                                    <Label prefHeight="45.0" prefWidth="277.0" text="Modele" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                                    <Label prefHeight="45.0" prefWidth="277.0" text="Type" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+                                    <Label prefHeight="45.0" prefWidth="277.0" text="Nombre de place" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+                                    <Label prefHeight="45.0" prefWidth="277.0" text="Numero de carte grise" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+                                    <JFXTextField fx:id="tfmModelVh" GridPane.columnIndex="3" GridPane.rowIndex="7">
+                                       <cursor>
+                                          <Cursor fx:constant="TEXT" />
+                                       </cursor>
+                                    </JFXTextField>
+                                    <JFXTextField fx:id="tfmTypeVh" GridPane.columnIndex="3" GridPane.rowIndex="8">
+                                       <cursor>
+                                          <Cursor fx:constant="TEXT" />
+                                       </cursor>
+                                    </JFXTextField>
+                                    <JFXTextField fx:id="tfmNbrPlaceVh" GridPane.columnIndex="3" GridPane.rowIndex="9">
+                                       <cursor>
+                                          <Cursor fx:constant="TEXT" />
+                                       </cursor>
+                                    </JFXTextField>
+                                    <JFXTextField fx:id="tfmNumCarteGriseVh" GridPane.columnIndex="3" GridPane.rowIndex="10">
+                                       <cursor>
+                                          <Cursor fx:constant="TEXT" />
+                                       </cursor>
+                                    </JFXTextField>
+                                    <JFXButton fx:id="btnModifVhValidation" onAction="#ModifVhValidation" prefHeight="32.0" prefWidth="155.0" stylesheets="@../css/cssBtn.css" text="Valider" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.rowIndex="11">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                       <styleClass>
+                                          <String fx:value="btnManip" />
+                                          <String fx:value="btn" />
+                                       </styleClass>
+                                    </JFXButton>
+                                    <Label prefHeight="45.0" prefWidth="277.0" text="Immatriculation" GridPane.rowIndex="6">
+                                       <GridPane.margin>
+                                          <Insets left="15.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label prefHeight="45.0" prefWidth="277.0" text="Modele" GridPane.rowIndex="7">
+                                       <GridPane.margin>
+                                          <Insets left="15.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label prefHeight="45.0" prefWidth="277.0" text="Type" GridPane.rowIndex="8">
+                                       <GridPane.margin>
+                                          <Insets left="15.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label prefHeight="45.0" prefWidth="277.0" text="Nombre de place" GridPane.rowIndex="9">
+                                       <GridPane.margin>
+                                          <Insets left="15.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label prefHeight="45.0" prefWidth="277.0" text="Numero de carte grise" GridPane.rowIndex="10">
+                                       <GridPane.margin>
+                                          <Insets left="15.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label fx:id="lblmImmatVh" prefHeight="45.0" prefWidth="277.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                    <Label fx:id="lblmModelVh" prefHeight="45.0" prefWidth="277.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                                    <Label fx:id="lblmTypeVh" prefHeight="45.0" prefWidth="277.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                                    <Label fx:id="lblmNbrPlaceVh" prefHeight="45.0" prefWidth="277.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                                    <Label fx:id="lblmNumCarteGriseVh" prefHeight="45.0" prefWidth="277.0" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                                    <Label alignment="CENTER" prefHeight="45.0" prefWidth="265.0" text="Valeurs actuelles" GridPane.columnSpan="2" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+                                       <font>
+                                          <Font name="System Bold" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER" prefHeight="45.0" prefWidth="359.0" text="Entrez les nouvelles valeurs" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+                                       <font>
+                                          <Font name="System Bold" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXButton id="btnRetour" onAction="#retourVh" prefHeight="36.0" prefWidth="156.0" ripplerFill="#ef4a97" stylesheets="@../css/cssBtn.css" text="Retour">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <ImageView fitHeight="87.0" fitWidth="114.0" onMouseClicked="#lblDeconnexion" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="CENTER">
+                                       <image>
+                                          <Image url="@../images/deconnexion.png" />
+                                       </image>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </ImageView>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#lblDeconnexion" prefHeight="24.0" prefWidth="133.0" styleClass="lblDeconnexion" stylesheets="@../css/cssBtn.css" text="Deconnexion" textAlignment="CENTER" underline="true" wrapText="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Label>
+                                    <Label fx:id="lblEtat7" prefHeight="32.0" prefWidth="490.0" GridPane.columnSpan="4" GridPane.rowIndex="2" />
+                                 </children>
+                              </GridPane>
+                              <GridPane fx:id="modifChPanel" layoutX="10.0" layoutY="10.0" prefHeight="635.0" prefWidth="828.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="259.0" minWidth="10.0" prefWidth="195.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="305.0" minWidth="10.0" prefWidth="253.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="327.0" minWidth="0.0" prefWidth="159.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="418.0" minWidth="10.0" prefWidth="221.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints maxHeight="79.0" minHeight="10.0" prefHeight="75.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="79.0" minHeight="10.0" prefHeight="17.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="79.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="148.0" minHeight="10.0" prefHeight="90.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="126.0" minHeight="10.0" prefHeight="53.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="140.0" minHeight="10.0" prefHeight="61.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="125.0" minHeight="10.0" prefHeight="88.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="90.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="79.0" minHeight="10.0" prefHeight="54.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="98.0" minHeight="10.0" prefHeight="58.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="66.0" minHeight="10.0" prefHeight="63.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <JFXTextField fx:id="tfmNomCh" cache="true" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                                       <cursor>
+                                          <Cursor fx:constant="TEXT" />
+                                       </cursor>
+                                    </JFXTextField>
+                                    <JFXTextField fx:id="tfmPrenomCh" GridPane.columnIndex="3" GridPane.rowIndex="5">
+                                       <cursor>
+                                          <Cursor fx:constant="TEXT" />
+                                       </cursor>
+                                    </JFXTextField>
+                                    <JFXTextField fx:id="tfmAdresseCh" GridPane.columnIndex="3" GridPane.rowIndex="7">
+                                       <cursor>
+                                          <Cursor fx:constant="TEXT" />
+                                       </cursor>
+                                    </JFXTextField>
+                                    <JFXTextField fx:id="tfmTelCh" GridPane.columnIndex="3" GridPane.rowIndex="8">
+                                       <cursor>
+                                          <Cursor fx:constant="TEXT" />
+                                       </cursor>
+                                    </JFXTextField>
+                                    <JFXButton fx:id="btnModifChValidation" onAction="#ModifChValidation" prefHeight="32.0" prefWidth="155.0" stylesheets="@../css/cssBtn.css" text="Valider" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.rowIndex="10">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                       <styleClass>
+                                          <String fx:value="btnManip" />
+                                          <String fx:value="btn" />
+                                       </styleClass>
+                                    </JFXButton>
+                                    <Label fx:id="lblmNomCh" prefHeight="45.0" prefWidth="277.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                    <Label fx:id="lblmPrenomCh" prefHeight="45.0" prefWidth="277.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                    <Label fx:id="lblmTypePermisCh" prefHeight="45.0" prefWidth="277.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                    <Label fx:id="lblmAdresseCh" prefHeight="45.0" prefWidth="277.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                                    <Label fx:id="lblmTelCh" prefHeight="45.0" prefWidth="277.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                                    <Label alignment="CENTER" prefHeight="45.0" prefWidth="265.0" text="Valeurs actuelles" GridPane.columnSpan="2" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                                       <font>
+                                          <Font name="System Bold" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER" prefHeight="45.0" prefWidth="359.0" text="Entrez les nouvelles valeurs" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                                       <font>
+                                          <Font name="System Bold" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label prefHeight="45.0" prefWidth="277.0" text="Nom" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                                       <GridPane.margin>
+                                          <Insets left="15.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label prefHeight="45.0" prefWidth="277.0" text="Prenom" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                                       <GridPane.margin>
+                                          <Insets left="15.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label prefHeight="45.0" prefWidth="277.0" text="Type de permis" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                                       <GridPane.margin>
+                                          <Insets left="15.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label prefHeight="45.0" prefWidth="277.0" text="Adresse" GridPane.columnIndex="2" GridPane.rowIndex="7">
+                                       <GridPane.margin>
+                                          <Insets left="15.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label prefHeight="45.0" prefWidth="277.0" text="Numero de telephone" GridPane.columnIndex="2" GridPane.rowIndex="8">
+                                       <GridPane.margin>
+                                          <Insets left="15.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label prefHeight="45.0" prefWidth="277.0" text="E-mail" GridPane.columnIndex="2" GridPane.rowIndex="9">
+                                       <GridPane.margin>
+                                          <Insets left="15.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <JFXTextField fx:id="tfmEmailCh" GridPane.columnIndex="3" GridPane.rowIndex="9">
+                                       <cursor>
+                                          <Cursor fx:constant="TEXT" />
+                                       </cursor>
+                                    </JFXTextField>
+                                    <Label prefHeight="45.0" prefWidth="277.0" text="Nom" GridPane.rowIndex="4">
+                                       <GridPane.margin>
+                                          <Insets left="15.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label prefHeight="45.0" prefWidth="277.0" text="Prenom" GridPane.rowIndex="5">
+                                       <GridPane.margin>
+                                          <Insets left="15.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label prefHeight="45.0" prefWidth="277.0" text="Type de permis" GridPane.rowIndex="6">
+                                       <GridPane.margin>
+                                          <Insets left="15.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label prefHeight="45.0" prefWidth="277.0" text="Adresse" GridPane.rowIndex="7">
+                                       <GridPane.margin>
+                                          <Insets left="15.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label prefHeight="45.0" prefWidth="277.0" text="Numero de telephone" GridPane.rowIndex="8">
+                                       <GridPane.margin>
+                                          <Insets left="15.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label prefHeight="45.0" prefWidth="277.0" text="E-mail" GridPane.rowIndex="9">
+                                       <GridPane.margin>
+                                          <Insets left="15.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label fx:id="lblmEmailCh" prefHeight="45.0" prefWidth="277.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                                    <ComboBox fx:id="typePermisCb1" prefHeight="28.0" prefWidth="215.0" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+                                    <JFXButton id="btnRetour" onAction="#retourCh" prefHeight="36.0" prefWidth="156.0" ripplerFill="#ef4a97" stylesheets="@../css/cssBtn.css" text="Retour">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <ImageView fitHeight="87.0" fitWidth="114.0" onMouseClicked="#lblDeconnexion" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="CENTER">
+                                       <image>
+                                          <Image url="@../images/deconnexion.png" />
+                                       </image>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </ImageView>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#lblDeconnexion" prefHeight="24.0" prefWidth="133.0" styleClass="lblDeconnexion" stylesheets="@../css/cssBtn.css" text="Deconnexion" textAlignment="CENTER" underline="true" wrapText="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Label>
+                                    <Label fx:id="lblEtat8" prefHeight="32.0" prefWidth="490.0" GridPane.columnSpan="4" GridPane.rowIndex="2" />
+                                 </children>
+                              </GridPane>
+                              <GridPane fx:id="modifPersoPanel" prefHeight="635.0" prefWidth="828.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="259.0" minWidth="10.0" prefWidth="195.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="305.0" minWidth="10.0" prefWidth="253.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="327.0" minWidth="0.0" prefWidth="159.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="418.0" minWidth="10.0" prefWidth="221.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints maxHeight="79.0" minHeight="10.0" prefHeight="75.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="79.0" minHeight="5.0" prefHeight="24.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="79.0" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="185.0" minHeight="10.0" prefHeight="109.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="133.0" minHeight="10.0" prefHeight="56.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="160.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="141.0" minHeight="10.0" prefHeight="53.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="120.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="101.0" minHeight="10.0" prefHeight="51.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="81.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="77.0" minHeight="10.0" prefHeight="77.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <JFXTextField fx:id="tfmNomPerso" cache="true" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                                       <cursor>
+                                          <Cursor fx:constant="TEXT" />
+                                       </cursor>
+                                    </JFXTextField>
+                                    <JFXTextField fx:id="tfmPrenomPerso" GridPane.columnIndex="3" GridPane.rowIndex="5">
+                                       <cursor>
+                                          <Cursor fx:constant="TEXT" />
+                                       </cursor>
+                                    </JFXTextField>
+                                    <JFXTextField fx:id="tfmAdressePerso" GridPane.columnIndex="3" GridPane.rowIndex="7">
+                                       <cursor>
+                                          <Cursor fx:constant="TEXT" />
+                                       </cursor>
+                                    </JFXTextField>
+                                    <JFXTextField fx:id="tfmTelPerso" GridPane.columnIndex="3" GridPane.rowIndex="8">
+                                       <cursor>
+                                          <Cursor fx:constant="TEXT" />
+                                       </cursor>
+                                    </JFXTextField>
+                                    <JFXButton fx:id="btnModifPersoValidation" onAction="#ModifPersoValidation" prefHeight="32.0" prefWidth="155.0" stylesheets="@../css/cssBtn.css" text="Valider" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.rowIndex="10">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                       <styleClass>
+                                          <String fx:value="btnManip" />
+                                          <String fx:value="btn" />
+                                       </styleClass>
+                                    </JFXButton>
+                                    <Label fx:id="lblmNomPerso" prefHeight="45.0" prefWidth="277.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                    <Label fx:id="lblmPrenomPerso" prefHeight="45.0" prefWidth="277.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                    <Label fx:id="lblmFonctPerso" prefHeight="45.0" prefWidth="277.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                    <Label fx:id="lblmAdressePerso" prefHeight="45.0" prefWidth="277.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                                    <Label fx:id="lblmTelPerso" prefHeight="45.0" prefWidth="277.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                                    <Label alignment="CENTER" prefHeight="45.0" prefWidth="265.0" text="Valeurs actuelles" GridPane.columnSpan="2" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                                       <font>
+                                          <Font name="System Bold" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER" prefHeight="45.0" prefWidth="359.0" text="Entrez les nouvelles valeurs" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                                       <font>
+                                          <Font name="System Bold" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label prefHeight="45.0" prefWidth="277.0" text="Nom" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                                       <GridPane.margin>
+                                          <Insets left="15.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label prefHeight="45.0" prefWidth="277.0" text="Prenom" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                                       <GridPane.margin>
+                                          <Insets left="15.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label prefHeight="45.0" prefWidth="277.0" text="Adresse" GridPane.columnIndex="2" GridPane.rowIndex="7">
+                                       <GridPane.margin>
+                                          <Insets left="15.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label prefHeight="45.0" prefWidth="277.0" text="Numero de telephone" GridPane.columnIndex="2" GridPane.rowIndex="8">
+                                       <GridPane.margin>
+                                          <Insets left="15.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label prefHeight="45.0" prefWidth="277.0" text="E-mail" GridPane.columnIndex="2" GridPane.rowIndex="9">
+                                       <GridPane.margin>
+                                          <Insets left="15.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <JFXTextField fx:id="tfmEmailPerso" GridPane.columnIndex="3" GridPane.rowIndex="9">
+                                       <cursor>
+                                          <Cursor fx:constant="TEXT" />
+                                       </cursor>
+                                    </JFXTextField>
+                                    <Label prefHeight="45.0" prefWidth="277.0" text="Nom" GridPane.rowIndex="4">
+                                       <GridPane.margin>
+                                          <Insets left="15.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label prefHeight="45.0" prefWidth="277.0" text="Prenom" GridPane.rowIndex="5">
+                                       <GridPane.margin>
+                                          <Insets left="15.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label prefHeight="45.0" prefWidth="277.0" text="Fonction" GridPane.rowIndex="6">
+                                       <GridPane.margin>
+                                          <Insets left="15.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label prefHeight="45.0" prefWidth="277.0" text="Adresse" GridPane.rowIndex="7">
+                                       <GridPane.margin>
+                                          <Insets left="15.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label prefHeight="45.0" prefWidth="277.0" text="Numero de telephone" GridPane.rowIndex="8">
+                                       <GridPane.margin>
+                                          <Insets left="15.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label prefHeight="45.0" prefWidth="277.0" text="E-mail" GridPane.rowIndex="9">
+                                       <GridPane.margin>
+                                          <Insets left="15.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label fx:id="lblmEmailPerso" prefHeight="45.0" prefWidth="277.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                                    <Label prefHeight="45.0" prefWidth="277.0" text="Fonction" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                                       <GridPane.margin>
+                                          <Insets left="15.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <JFXTextField fx:id="tfmFonctPerso" GridPane.columnIndex="3" GridPane.rowIndex="6">
+                                       <cursor>
+                                          <Cursor fx:constant="TEXT" />
+                                       </cursor>
+                                    </JFXTextField>
+                                    <JFXButton id="btnRetour" onAction="#retourVh" prefHeight="36.0" prefWidth="156.0" ripplerFill="#ef4a97" stylesheets="@../css/cssBtn.css" text="Retour">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <ImageView fitHeight="87.0" fitWidth="114.0" onMouseClicked="#lblDeconnexion" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="CENTER">
+                                       <image>
+                                          <Image url="@../images/deconnexion.png" />
+                                       </image>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </ImageView>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#lblDeconnexion" prefHeight="24.0" prefWidth="133.0" styleClass="lblDeconnexion" stylesheets="@../css/cssBtn.css" text="Deconnexion" textAlignment="CENTER" underline="true" wrapText="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Label>
+                                    <Label fx:id="lblEtat9" prefHeight="32.0" prefWidth="490.0" GridPane.columnSpan="4" GridPane.rowIndex="2" />
+                                 </children>
+                              </GridPane>
+                              <VBox fx:id="gestUserPanel" layoutX="10.0" layoutY="12.0" prefHeight="700.0" prefWidth="837.0" visible="false" AnchorPane.bottomAnchor="-65.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="2.0">
+                                 <children>
+                                    <GridPane prefHeight="47.0" prefWidth="829.0">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <ImageView fitHeight="87.0" fitWidth="114.0" onMouseClicked="#lblDeconnexion" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="1" GridPane.rowSpan="8">
+                                             <image>
+                                                <Image url="@../images/deconnexion.png" />
+                                             </image>
+                                             <GridPane.margin>
+                                                <Insets left="20.0" />
+                                             </GridPane.margin>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </ImageView>
+                                          <Label alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#lblDeconnexion" prefHeight="24.0" prefWidth="133.0" styleClass="lblDeconnexion" stylesheets="@../css/cssBtn.css" text="Deconnexion" textAlignment="CENTER" underline="true" wrapText="true" GridPane.columnIndex="4" GridPane.rowIndex="10">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Label>
+                                          <Label fx:id="lblEtat" prefHeight="32.0" prefWidth="490.0" GridPane.columnSpan="4" GridPane.rowIndex="5" GridPane.rowSpan="3" />
+                                       </children>
+                                    </GridPane>
+                                    <Label prefHeight="30.0" prefWidth="178.0" styleClass="lblSimple" stylesheets="@../css/cssBtn.css" text="Liste des utilisateur" />
+                                    <TableView fx:id="listeUserTv" prefHeight="383.0" prefWidth="796.0">
+                                       <columns>
+                                          <TableColumn fx:id="loginUserCln" prefWidth="75.0" text="Login" />
+                                          <TableColumn fx:id="mdpUserCln" prefWidth="75.0" text="Mot de passe" />
+                                          <TableColumn fx:id="roleUserCln" prefWidth="75.0" text="Role" />
+                                          <TableColumn fx:id="id_userCln" prefWidth="75.0" text="id_user" visible="false" />
+                                       </columns>
+                                       <columnResizePolicy>
+                                          <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                       </columnResizePolicy>
+                                    </TableView>
+                                    <GridPane>
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints maxHeight="41.0" minHeight="0.0" prefHeight="8.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="17.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="24.0" minHeight="0.0" prefHeight="3.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="53.0" minHeight="0.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="53.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <JFXButton onAction="#ajoutUser" prefHeight="38.0" prefWidth="140.0" stylesheets="@../css/cssBtn.css" text="Ajouter" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                             <styleClass>
+                                                <String fx:value="btn" />
+                                                <String fx:value="btnManip" />
+                                             </styleClass>
+                                          </JFXButton>
+                                          <JFXButton onAction="#modifUser" prefHeight="38.0" prefWidth="140.0" stylesheets="@../css/cssBtn.css" text="Modifier" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                             <styleClass>
+                                                <String fx:value="btn" />
+                                                <String fx:value="btnManip" />
+                                             </styleClass>
+                                          </JFXButton>
+                                          <JFXButton onAction="#printUserList" prefHeight="38.0" prefWidth="140.0" stylesheets="@../css/cssBtn.css" text="Imprimer" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                             <styleClass>
+                                                <String fx:value="btn" />
+                                                <String fx:value="btnManip" />
+                                             </styleClass>
+                                          </JFXButton>
+                                          <JFXButton onAction="#deleteUser" prefHeight="38.0" prefWidth="140.0" stylesheets="@../css/cssBtn.css" text="Supprimer" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                             <styleClass>
+                                                <String fx:value="btn" />
+                                                <String fx:value="btnManip" />
+                                             </styleClass>
+                                          </JFXButton>
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </VBox>
+                              <VBox fx:id="activitePanel" layoutX="10.0" layoutY="12.0" prefHeight="700.0" prefWidth="837.0" visible="false" AnchorPane.bottomAnchor="-65.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="2.0">
+                                 <children>
+                                    <GridPane prefHeight="47.0" prefWidth="829.0">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <ImageView fitHeight="87.0" fitWidth="114.0" onMouseClicked="#lblDeconnexion" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="1" GridPane.rowSpan="8">
+                                             <image>
+                                                <Image url="@../images/deconnexion.png" />
+                                             </image>
+                                             <GridPane.margin>
+                                                <Insets left="20.0" />
+                                             </GridPane.margin>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </ImageView>
+                                          <Label alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#lblDeconnexion" prefHeight="24.0" prefWidth="133.0" styleClass="lblDeconnexion" stylesheets="@../css/cssBtn.css" text="Deconnexion" textAlignment="CENTER" underline="true" wrapText="true" GridPane.columnIndex="4" GridPane.rowIndex="11">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Label>
+                                          <Label fx:id="lblEtat11" prefHeight="32.0" prefWidth="490.0" GridPane.columnSpan="4" GridPane.rowIndex="6" GridPane.rowSpan="3" />
+                                       </children>
+                                    </GridPane>
+                                    <Label prefHeight="30.0" prefWidth="224.0" styleClass="lblSimple" stylesheets="@../css/cssBtn.css" text="Liste des activites" />
+                                    <TableView fx:id="listeActTv" prefHeight="383.0" prefWidth="840.0" tableMenuButtonVisible="true">
+                                       <columns>
+                                          <TableColumn fx:id="vhACln" prefWidth="75.0" text="VEHICULE" />
+                                          <TableColumn fx:id="chACln" prefWidth="75.0" text="CHAUFFEUR" />
+                                          <TableColumn fx:id="typeACln" prefWidth="75.0" text="TYPE" />
+                                          <TableColumn fx:id="libelleCln" prefWidth="75.0" text="LIBELLE" />
+                                          <TableColumn fx:id="dateDepartCln" prefWidth="75.0" text="DATE DE DEPART" />
+                                          <TableColumn fx:id="dateArriveeCln" prefWidth="75.0" text="DATE ARRIVEE" />
+                                          <TableColumn fx:id="destinationCln" prefWidth="75.0" text="DESTINATION" />
+                                          <TableColumn fx:id="lieuDepartCln" prefWidth="75.0" text="LIEU DE DEPART" />
+                                          <TableColumn fx:id="id_ACln" prefWidth="75.0" text="id_activite" />
+                                       </columns>
+                                       <columnResizePolicy>
+                                          <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                       </columnResizePolicy>
+                                    </TableView>
+                                    <GridPane>
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints maxHeight="41.0" minHeight="0.0" prefHeight="8.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="17.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="24.0" minHeight="0.0" prefHeight="3.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="53.0" minHeight="0.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="53.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <JFXButton onAction="#ajoutAc" prefHeight="38.0" prefWidth="140.0" stylesheets="@../css/cssBtn.css" text="Ajouter" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                             <styleClass>
+                                                <String fx:value="btn" />
+                                                <String fx:value="btnManip" />
+                                             </styleClass>
+                                          </JFXButton>
+                                          <JFXButton onAction="#modifAc" prefHeight="38.0" prefWidth="140.0" stylesheets="@../css/cssBtn.css" text="Modifier" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                             <styleClass>
+                                                <String fx:value="btn" />
+                                                <String fx:value="btnManip" />
+                                             </styleClass>
+                                          </JFXButton>
+                                          <JFXButton onAction="#printAcList" prefHeight="38.0" prefWidth="140.0" stylesheets="@../css/cssBtn.css" text="Imprimer" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                             <styleClass>
+                                                <String fx:value="btn" />
+                                                <String fx:value="btnManip" />
+                                             </styleClass>
+                                          </JFXButton>
+                                          <JFXButton onAction="#deleteAc" prefHeight="38.0" prefWidth="140.0" stylesheets="@../css/cssBtn.css" text="Supprimer" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                             <styleClass>
+                                                <String fx:value="btn" />
+                                                <String fx:value="btnManip" />
+                                             </styleClass>
+                                          </JFXButton>
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </VBox>
+                              <GridPane fx:id="ajoutActivitePanel" layoutX="10.0" layoutY="10.0" prefHeight="637.0" prefWidth="837.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints maxHeight="138.0" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="140.0" minHeight="5.0" prefHeight="25.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="242.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="242.0" minHeight="10.0" prefHeight="53.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="242.0" minHeight="10.0" prefHeight="53.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="232.0" minHeight="10.0" prefHeight="77.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="189.0" minHeight="10.0" prefHeight="67.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="140.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="149.0" minHeight="10.0" prefHeight="52.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="132.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="106.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="90.0" minHeight="10.0" prefHeight="90.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <JFXTextField fx:id="tfTypeAct" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                                    <Label prefHeight="45.0" prefWidth="277.0" text="Type" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                    <Label prefHeight="45.0" prefWidth="277.0" text="Libelle" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                    <Label prefHeight="45.0" prefWidth="277.0" text="Date de depart" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                                    <Label prefHeight="45.0" prefWidth="277.0" text="Date d'arrivé" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                                    <Label prefHeight="45.0" prefWidth="277.0" text="Destination" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                                    <JFXTextField fx:id="tfDestinAct" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+                                    <JFXTextField fx:id="tfLibelleAct" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                                    <JFXButton onAction="#ajoutActiviteValidation" prefHeight="32.0" prefWidth="155.0" stylesheets="@../css/cssBtn.css" text="Valider" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="11">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                       <styleClass>
+                                          <String fx:value="btnManip" />
+                                          <String fx:value="btn" />
+                                       </styleClass>
+                                    </JFXButton>
+                                    <JFXTextField fx:id="tfLieuDepAct" text="SUPPTIC" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+                                    <Label prefHeight="45.0" prefWidth="277.0" text="Lieu de depart" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                                    <JFXButton id="btnRetour" onAction="#retourPerso" prefHeight="36.0" prefWidth="156.0" ripplerFill="#ef4a97" stylesheets="@../css/cssBtn.css" text="Retour">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <ImageView fitHeight="87.0" fitWidth="114.0" onMouseClicked="#lblDeconnexion" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="CENTER">
+                                       <image>
+                                          <Image url="@../images/deconnexion.png" />
+                                       </image>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </ImageView>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#lblDeconnexion" prefHeight="24.0" prefWidth="133.0" styleClass="lblDeconnexion" stylesheets="@../css/cssBtn.css" text="Deconnexion" textAlignment="CENTER" underline="true" wrapText="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Label>
+                                    <Label fx:id="lblEtat61" prefHeight="32.0" prefWidth="490.0" GridPane.columnSpan="4" GridPane.rowIndex="2" />
+                                    <JFXDatePicker fx:id="dateDepAct" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                                    <JFXDatePicker fx:id="dateArrAct" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+                                    <Label prefHeight="45.0" prefWidth="277.0" text="Chauffeur" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                    <Label prefHeight="45.0" prefWidth="277.0" text="Vehicule" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                    <JFXTextField fx:id="tfChAct" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                                    <JFXTextField fx:id="tfVhAct" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="28.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Pictures/TP_GL/user.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="272.0" layoutY="81.0" prefHeight="32.0" prefWidth="43.0" text="Login" />
+      <Label layoutX="272.0" layoutY="171.0" prefHeight="32.0" prefWidth="117.0" text="Password" />
+      <TextField layoutX="383.0" layoutY="85.0" />
+      <TextField layoutX="383.0" layoutY="171.0" />
+      <Button layoutX="425.0" layoutY="346.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="107.0" text="Se Connecter" />
+      <Label layoutX="272.0" layoutY="242.0" prefHeight="32.0" prefWidth="107.0" text="Type de conte" />
+      <SplitMenuButton layoutX="383.0" layoutY="246.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Responsable">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Action 1" />
+          <MenuItem mnemonicParsing="false" text="Action 2" />
+        </items>
+      </SplitMenuButton>
+   </children>
+</AnchorPane>
