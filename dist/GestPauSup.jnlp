@@ -8,11 +8,15 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="GestPauSup.jar" size="55242" download="eager" />
+    <jar href="GestPauSup.jar" size="55252" download="eager" />
     <jar href="lib\com.mysql.jdbc_5.1.5.jar" size="676712" download="eager" />
     <jar href="lib\itextpdf-5.4.0.jar" size="1889485" download="eager" />
+    <jar href="lib\jfoenix-8.0.5.jar" size="2657082" download="eager" />
     <jar href="lib\jfoenix.jar" size="2211776" download="eager" />
   </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="GestPauSup" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
   <jfx:javafx-desc  width="800" height="600" main-class="gestpausup.GestPauSup"  name="GestPauSup" />
   <update check="always"/>
 </jnlp>
